@@ -29,14 +29,14 @@ class CalculatorScreen(Screen):
         
         self.menu_bar = DropDown()
         options = {
-            'History': (self.show_history, 'icons/history.png'),
-            'Dark Mode': (self.toggle_dark_mode, 'icons/dark_mode.png'),
-            'Scientific Mode': (self.toggle_scientific_mode, 'icons/science.png'),
-            'Toggle Angle Mode': (self.toggle_angle_mode, 'icons/angle.png'),
-            'Age Calculator': (self.calculate_age, 'icons/age.png'),
-            'Currency Converter': (self.convert_currency, 'icons/currency.png'),
-            'Temperature Converter': (self.convert_temperature, 'icons/temperature.png'),
-            'Settings': (self.open_settings, 'icons/settings.png')
+            'History': (self.show_history, './icons/history.png'),
+            'Dark Mode': (self.toggle_dark_mode, './icons/dark_mode.png'),
+            'Scientific Mode': (self.toggle_scientific_mode, './icons/science.png'),
+            'Toggle Angle Mode': (self.toggle_angle_mode, './icons/angle.png'),
+            'Age Calculator': (self.calculate_age, './icons/age.png'),
+            'Currency Converter': (self.convert_currency, './icons/currency.png'),
+            'Temperature Converter': (self.convert_temperature, './icons/temperature.png'),
+            'Settings': (self.open_settings, './icons/settings.png')
         }
         for label, (func, icon) in options.items():
             btn = Button(text=label, size_hint_y=None, height=50)
